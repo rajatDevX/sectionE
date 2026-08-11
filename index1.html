@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS first class</title>
+    <style>
+      *{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      article{
+        color:red;
+        background-color: lightgreen;
+       
+      }
+      /* class selector */
+      .first{
+        color:blue;
+      }
+      /* id selector */
+      #second{
+        color:brown;
+      }
+      /* descendant selector */
+      div p{
+        color:pink
+      }
+      div.third>p{
+        background-color: aqua;
+      }
+      h6~p{
+        color:cadetblue;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 style="color:red">this is my text content</h1>
+  <p style="color:green;background: lightcoral;">this is my paragraph</p>
+
+  <article>this is an article</article>
+  <div class="first">
+    this is content inside first class
+  </div>
+  <div id="second">
+    this is content inside second id
+  </div>
+  <div>
+    <p>this is a paragraph inside div element</p>
+  </div>
+  <div class="third">
+    <p>this is  paragraph</p>
+    <div>
+      <p>this is second child of div with class third</p>
+    </div>
+  </div>
+  <h6>this is heading element</h6>
+  <p>this is a paragraph below heading 6</p>
+  <p>this is a paragraph after two line of h6 tag</p>
+  <div>this is a div element</div>
+  <div class="external">
+    this is a div element inside external class
+  </div>
+</body>
+</html>
