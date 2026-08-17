@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-box</title>
+    <style>
+        body{
+            height:100vh;
+            width:100vw;
+        }
+        .container{
+            height:1000px;
+            width:2000px;
+            border:2px solid black;
+            display:flex;
+            flex-direction:row;
+            /* gap:20px; */
+            /* justify-content: center; */
+            text-align:center;
+            /* align-items: center; */
+            /* align-items: center; */
+            width:100%;
+            /* flex-wrap:wrap-reverse; */
+            /* flex-wrap:wrap; */
+            align-content:end;
+        }
+        div{
+            height:200px;
+            width:200px;
+            border:2px solid black;
+        }
+        .center{
+            display:flex;
+            justify-content: center;
+            align-items: center
+        }
+           
+        .first{
+            background-color: red;
+            /* flex-grow:2; */
+            /* align-self:end; */
+            /* order:1; */
+            flex-basis:300px;
+           
+        }
+        .second{
+            background-color: greenyellow;
+            /* flex-grow:1; */
+            flex-shrink:2;
+        }
+        .third{
+            background-color: chocolate;
+            /* flex-grow:2; */
+            /* align-self:center; */
+        }
+        .fourth{
+            background-color: cadetblue;
+            /* flex-grow:1; */
+            /* order:-1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first center">
+            first box
+        </div>
+        <div class="second center">
+            second box
+        </div>
+        <div class="third center">
+            third box
+        </div>
+        <div class="fourth center">
+            fourth box
+        </div>
+    </div>
+    
+</body>
+</html>

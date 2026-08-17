@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily pulse news</title>
+    <style>
+      :root {
+        --ink: #111;
+        --accent: #b3122a;
+        --bg: #f4f4f4;
+        --line: #ddd;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: var(--ink);
+        background-color: var(--bg);
+        line-height: 1.6;
+      }
+      header {
+        background: #fff;
+        border-bottom: 3px solid var(--ink);
+        padding: 14px 40px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0px;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+      }
+      header p {
+        margin: 2px 0 0;
+        font-size: 0.85rem;
+        color: #666;
+        font-size: italic;
+      }
+      nav {
+        background: var(--ink);
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 12px 18px;
+        font-size: 0.9rem;
+        font-family: Arial, sans-serif;
+      }
+      nav a:hover {
+        background: var(--accent);
+      }
+      .layout {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        gap: 30px;
+      }
+      main {
+        min-width: 0;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2.section-title {
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      article {
+        background: #fff;
+        border: 1px solid var(--line);
+        padding: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      article figure {
+        margin: 0;
+        flex: 0 0 160px;
+      }
+      article img {
+        width: 160px;
+        height: 110px;
+        object-fit: cover;
+      }
+      article figcaption {
+        font-size: 0.75rem;
+        color: #777;
+        text-align: center;
+      }
+      article .content {
+        flex: 1;
+        min-width: 200px;
+      }
+      article h3 {
+        margin: 0 0 6px;
+      }
+      .breaking {
+        background: var(--accent);
+        color: #fff;
+        padding: 10px 15px;
+        font-family: Arial, sans-serif;
+        margin-bottom: 20px;
+      }
+      aside {
+        background: #fff;
+        border: 1px solid var(--line);
+        padding: 20px;
+        align-self: start;
+      }
+      aside ul {
+        list-style: none;
+        padding: 0;
+      }
+      aside li {
+        padding: 6px 0;
+        border-bottom: 1px dashed var(--line);
+        font-size: 0.9rem;
+      }
+      footer {
+        background: var(--ink);
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.85rem;
+        margin-top: 20px;
+      }
+      @media (max-width: 768px) {
+        .layout{
+            grid-template-columns: 1fr;
+          
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Daily Pulse</h1>
+      <p>Your trusted source for today's news</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#breaking">Breaking</a></li>
+        <li><a href="#politics">Politics</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#entertainment">Entertainment</a></li>
+      </ul>
+    </nav>
+
+    <div class="layout">
+      <main>
+        <p class="breaking" id="breaking">
+          🔴 BREAKING: Parliament passes new digital privacy bill.
+        </p>
+
+        <section id="politics">
+          <h2 class="section-title">Politics</h2>
+          <article>
+            <figure>
+              <img src="parliament.png" alt="Parliament session" />
+              <figcaption>Parliament in session</figcaption>
+            </figure>
+            <div class="content">
+              <h3>New Privacy Bill Passed</h3>
+              <p>
+                The bill introduces stricter rules for data collection by
+                private companies...
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section id="technology">
+          <h2 class="section-title">Technology</h2>
+          <article>
+            <figure>
+              <img src="conference.png" alt="AI conference" />
+              <figcaption>AI Summit 2026</figcaption>
+            </figure>
+            <div class="content">
+              <h3>India Hosts Global AI Summit</h3>
+              <p>
+                Leading tech companies gathered to discuss the future of
+                responsible AI...
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section id="sports">
+          <h2 class="section-title">Sports</h2>
+          <article>
+            <figure>
+              <img src="cricket.png" alt="Cricket match" />
+              <figcaption>India vs Australia</figcaption>
+            </figure>
+            <div class="content">
+              <h3>India Wins the Series 3-2</h3>
+              <p>
+                A thrilling final match sealed the series in India's favour...
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section id="entertainment">
+          <h2 class="section-title">Entertainment</h2>
+          <article>
+            <figure>
+              <img src="movie.png" alt="Movie premiere" />
+              <figcaption>Premiere night</figcaption>
+            </figure>
+            <div class="content">
+              <h3>Blockbuster Sets Opening Day Record</h3>
+              <p>The film collected record numbers on its opening weekend...</p>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <aside>
+        <h3>Trending</h3>
+        <ul>
+          <li>Stock markets hit record high</li>
+          <li>New metro line inaugurated</li>
+          <li>Monsoon forecast update</li>
+        </ul>
+
+        <h3>Popular</h3>
+        <ul>
+          <li>Top 10 startups of 2026</li>
+          <li>Cricket World Cup schedule</li>
+        </ul>
+
+        <h3>Recent Posts</h3>
+        <ul>
+          <li>Budget session begins Monday</li>
+          <li>New smartphone launch this week</li>
+        </ul>
+      </aside>
+    </div>
+
+    <footer>&copy; 2026 Daily Pulse News Network</footer>
+  </body>
+</html>
