@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        border:1px solid black;
+      }
+      .box:hover {
+        background-color: blue;
+        transform: translateX(500px);
+      }
+      .linear {
+        transition-timing-function: linear;
+        transition-duration: 1s;
+        transition-property: all;
+      }
+      .ease-in {
+        transition-timing-function: ease-in;
+        transition-duration: 3s;
+        transition-property: all;
+      }
+      .ease-out {
+        transition-timing-function: ease-out;
+        transition-duration: 3s;
+        transition-property: all;
+      }
+      .ease-in-out {
+        transition-timing-function: ease-in-out;
+        transition-duration: 3s;
+        transition-property: all;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box linear"></div>
+    <div class="box ease-in"></div>
+    <div class="box ease-out"></div>
+    <div class="box ease-in-out"></div>
+  </body>
+</html>

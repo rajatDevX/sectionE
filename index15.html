@@ -23,15 +23,30 @@
         border: 2px solid black;
         background-color: aquamarine;
         margin: auto;
+        transition-property: background-color transform;
+        transition-duration: 3s;
       }
       .box:hover {
         background-color: red;
+        transform:translateX(-200px) translateY(200px) scale(2);
+      }
+      button{
+        padding:10px 15px;
+        background-color: blue;
+        color:white;
+        transition-property: background-color;
+        transition-duration: 2s;
+      }
+      button:hover{
+        background-color: red;
+        
       }
     </style>
   </head>
   <body>
     <div class="box1">
-      <div class="box">I am learn transition properties</div>
+      <div class="box">I am learning transition properties</div>
     </div>
+    <button>click me</button>
   </body>
 </html>
