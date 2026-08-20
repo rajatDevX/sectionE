@@ -1,0 +1,17 @@
+flexbox
+1-flex-direction
+2-flex-wrap
+main-axis justify-content-start end center space-between space-evenly space-around
+cross-axis 
+flex-item-flex-basis order flex-grow flex-shrink align-self align-content
+
+
+
+grid
+grid-template-coluumns
+grid-template-rows
+grid-column-start grid-column-end gap
+
+
+
+

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid properties autofill/autofit</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      div {
+        border: 2px solid black;
+        font-size: 2rem;
+      }
+      .box1 {
+        background-color: rgb(203, 224, 224);
+        /* height: 100%; */
+        width: 100%;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        /* grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); */
+      }
+      .box2 {
+        background-color: rgb(203, 224, 224);
+        /* height: 100%; */
+        width: 100%;
+        display: grid;
+        gap: 5px;
+        /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+        grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box">react</div>
+      <div class="box">css</div>
+      <div class="box">html</div>
+    </div>
+    <div class="box2">
+      <div class="box">react</div>
+      <div class="box">css</div>
+      <div class="box">html</div>
+    </div>
+  </body>
+</html>
