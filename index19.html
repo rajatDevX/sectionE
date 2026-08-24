@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #111;
+        font-family: Arial;
+      }
+      .card {
+        width: 250px;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        background: #222;
+        border-radius: 15px;
+
+        transition: 0.4s;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+
+        transition: 0.4s;
+      }
+      .card h2 {
+        transition: 0.4s;
+      }
+      .card button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background: purple;
+        color: white;
+
+        transition: 0.4s;
+      }
+      .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 20px 40px purple;
+      }
+      .card:hover img {
+        transform: scale(1.08);
+      }
+      .card:hover h2 {
+        color: violet;
+      }
+
+      .card button:hover {
+        transform: scale(1.1);
+        background: deeppink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e" />
+
+      <h2>Cyber Warrior</h2>
+
+      <p>Level 42 ⚡</p>
+
+      <button>Play Now</button>
+    </div>
+  </body>
+</html>
