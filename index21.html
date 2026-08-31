@@ -6,47 +6,111 @@
     <title>Spice Route | Restaurant</title>
     <link rel="shortcut icon" href="favicon1.png" type="image/png" />
     <style>
-        :root{
-            --ink:#2b2118;
-            --accent:#c1440e;
-            --bg:#fff8f0;
-            --line:#e6dccb;
-        }
-        *{ 
-            box-sizing: border-box;
-        }
-        body{
-            margin:0;
-            line-height: 1.6;
-            color:var(--ink);
-            background-color: var(--bg);
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        header{
-            background-color: var(--ink);
-            color:#fff;
-            display:flex;
-            justify-content:space-between;
-            align-items:start;
-            flex-wrap:wrap;
-            padding:20px 40px;
-        }
-        header h1{
-            margin:0;
-            font-size:1.6rem;
-            letter-spacing: 1px;
-        }
-        nav a{
-            text-decoration:none;
-            margin-left:18px;
-            color:#f2e6d8;
-            font-size:0.9rem;
-
-        }
-        nav a:hover{
-            color: var(--accent);
-        }
-     
+      :root {
+        --ink: #2b2118;
+        --accent: #c1440e;
+        --bg: #fff8f0;
+        --line: #e6dccb;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        line-height: 1.6;
+        color: var(--ink);
+        background-color: var(--bg);
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      header {
+        background-color: var(--ink);
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+        padding: 20px 40px;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+      }
+      nav a {
+        text-decoration: none;
+        margin-left: 18px;
+        color: #f2e6d8;
+        font-size: 0.9rem;
+      }
+      nav a:hover {
+        color: var(--accent);
+      }
+      .hero {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(hero.png) center/cover;
+        padding: 90px 20px;
+        text-align: center;
+        color: white;
+      }
+      .hero h2 {
+        font-size: 2.2rem;
+        margin: 0;
+      }
+      main {
+        margin: 0 auto;
+        max-width: 900px;
+      }
+      h2.section-title {
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+        padding: 5px;
+      }
+      .menu-category h3 {
+        color: var(--accent);
+      }
+      .menu-category > ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      .menu-category li {
+        border-bottom: 1px solid var(--line);
+        padding: 4px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        border: 1px solid var(--line);
+        padding: 10px;
+        text-align: center;
+      }
+      thead {
+        color: #fff;
+        background: var(--accent);
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 15px;
+      }
+      .gallery figure {
+        margin: 0;
+      }
+      .gallery img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+      .gallery figcaption {
+        text-align: center;
+        font-size: 0.85rem;
+        margin-top: 5px;
+      }
     </style>
   </head>
   <body>
@@ -116,37 +180,37 @@
       </section>
       <section id="gallery">
         <h2 class="section-title">Gallery</h2>
-        <figure>
-            <img src="paneertikka.png" alt="paneer">
+        <div class="gallery">
+          <figure>
+            <img src="paneertikka.png" alt="paneer" />
             <figcaption>Paneer Tikka</figcaption>
-        </figure>
-         <figure>
-            <img src="daalmakhani.png" alt="dal">
+          </figure>
+          <figure>
+            <img src="daalmakhani.png" alt="dal" />
             <figcaption>Dal Makhani</figcaption>
-        </figure>
-         <figure>
-            <img src="gulabjamun.png" alt="gulabjamun">
+          </figure>
+          <figure>
+            <img src="gulabjamun.png" alt="gulabjamun" />
             <figcaption>Gulab Jamun</figcaption>
-        </figure>
-
+          </figure>
+        </div>
       </section>
       <section id="reviews">
         <h2 class="section-title">Customer Reviews</h2>
-
       </section>
       <section id="hours">
         <h2 class="section-title">Opening Hours</h2>
         <div class="reviews">
-            <article>
-                <h3>Priya Sharma</h3>
-                <p>★★★★★</p>
-                <p>Best paneer tikka in town, highly recommend!</p>
-            </article>
-            <article>
-                <h3>Amit Verma</h3>
-                <p>★★★★☆</p>
-                <p>Great ambience and quick service.</p>
-            </article>
+          <article>
+            <h3>Priya Sharma</h3>
+            <p>★★★★★</p>
+            <p>Best paneer tikka in town, highly recommend!</p>
+          </article>
+          <article>
+            <h3>Amit Verma</h3>
+            <p>★★★★☆</p>
+            <p>Great ambience and quick service.</p>
+          </article>
         </div>
         <table>
           <thead>
@@ -175,7 +239,21 @@
           </tbody>
         </table>
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <h2 class="section-title">Contact / Reserve a Table</h2>
+        <form>
+          <label for="cname">Name</label>
+          <input type="text" id="cname" required />
+
+          <label for="cphone">Phone</label>
+          <input type="tel" id="cphone" required />
+
+          <label for="cmsg">Message</label>
+          <textarea id="cmsg" rows="4"></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>123 MG Road, Agra | +91 999999999</p>
