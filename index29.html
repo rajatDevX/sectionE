@@ -17,6 +17,7 @@
         transform-style: preserve-3d;
         transition: all 2s;
         position: relative;
+        transform-style: preserve-3d;
       }
       .scene:hover .card {
         transform: rotateY(180deg);
@@ -30,6 +31,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        backface-visibility: hidden;
       }
       .front {
         background-color: brown;

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold text-blue-500">
+      this is my first tailwind project
+    </h1>
+
+    <div class="text-6xl text-center uppercase">this is a div element</div>
+    <div class="leading-8">this is second line</div>
+    <div class="leading-4">this is second line</div>
+    <div class="leading-8">this is second line</div>
+    <div class="w-full bg-blue-500 text-center" >this is complete width element</div>
+    <div class="w-1/2 bg-blue-500 text-center" >this is half width element</div>
+    <div class="w-40 bg-blue-500 text-center h-40">this is 40*4px width element </div>
+    <div class="p-8 bg-green-100">div element with some padding</div>
+    <div class="pt-8 bg-green-900">div element with top padding</div>
+    <div class="mx-auto bg-orange-100 w-40">this is div element with some margin</div>
+  </body>
+</html>
+
+<!-- 
+ npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch -->
