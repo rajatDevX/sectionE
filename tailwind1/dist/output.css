@@ -16,7 +16,9 @@
     --color-green-100: oklch(96.2% 0.044 156.743);
     --color-green-900: oklch(39.3% 0.095 152.535);
     --color-blue-100: oklch(93.2% 0.032 255.585);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-pink-200: oklch(89.9% 0.061 343.231);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -25,6 +27,7 @@
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --font-weight-bold: 700;
+    --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-brand: #7c3aed;
@@ -333,6 +336,18 @@
   .uppercase {
     text-transform: uppercase;
   }
+}
+.btn {
+  margin-inline: auto;
+  display: block;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-blue-400);
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 2);
+  color: var(--color-white);
+}
+.btn:hover {
+  background-color: var(--color-blue-700);
 }
 @property --tw-border-style {
   syntax: "*";
