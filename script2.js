@@ -142,7 +142,7 @@ students.forEach(student=>console.log("Hello "+student.name));
 // students.forEach(greet);
 
 
-// object sestructuring
+// object destructuring
 const person1={
     name:"Shiva",
     age:23
@@ -161,3 +161,14 @@ const arr1=[23,56,78];
 const [first,second]=arr1;
 console.log(first);
 console.log(second);
+
+
+// const a=34;
+// a=56;
+// console.log(a);
+
+const a=[12,34,56,78];
+
+// a=address
+a[0]=56;
+console.log(a);
