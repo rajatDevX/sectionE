@@ -49,3 +49,17 @@ let ans6=calculator(10,5,function(a,b){
 console.log(ans6);
 
 console.log(calculator(34,23,(a,b)=>a-b)); 
+
+
+function repeat(count,task){
+    for(let i=0;i<count;i++){
+        task(i);
+    }
+}
+const greet3=function(countNumber){
+    console.log(`repeating number- ${countNumber}`);
+};
+
+repeat(5, function (countNumber) {
+  console.log(`repeating number- ${countNumber}`);
+});

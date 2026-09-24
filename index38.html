@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    <h1 id="first">this is a heading</h1>
+    <h1>this is my heading 2</h1>
+    <p class="first">this is a paragraph</p>
+    <script>
+        const heading=document.getElementById("first");
+        const para1=document.getElementsByClassName("first");
+        const heading1=document.getElementsByTagName("h1");
+        const heading2=document.querySelector("h1");
+        const heading3=document.querySelectorAll("h1");
+        console.log(heading);  
+        console.log(para1);
+        console.log(para1[0]);
+        console.log(typeof para1); 
+        console.log(heading1);
+        console.log(heading2);
+        console.log(heading3);
+        console.log(typeof heading3);
+    </script>
+</body>
+</html>
